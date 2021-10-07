@@ -1,4 +1,5 @@
 digraph G {
+	node [color=lightblue2 style=filled]
 	"kube-api" -> etcd
 	"openshift-api" -> etcd
 	"kube-apiserver-operator" -> "kube-api"

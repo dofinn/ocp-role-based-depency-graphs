@@ -2,7 +2,8 @@
 
 import graphviz
 
-g = graphviz.Digraph('G', filename='control-plane.gv', engine='sfdp')
+g = graphviz.Digraph('G', filename='control-plane.gv', engine='sfdp', format='png',
+                     node_attr={'color': 'lightblue2', 'style': 'filled'})
 
 g.edge('kube-api', 'etcd')
 g.edge('openshift-api', 'etcd')
