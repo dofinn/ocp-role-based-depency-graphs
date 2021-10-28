@@ -1,5 +1,6 @@
 digraph G {
 	node [color=lightblue2 style=filled]
+	etcd -> disk_performance
 	"kube-api" -> etcd
 	"openshift-api" -> etcd
 	"kube-apiserver-operator" -> "kube-api"

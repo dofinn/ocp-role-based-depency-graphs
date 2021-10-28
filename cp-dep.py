@@ -5,6 +5,7 @@ import graphviz
 g = graphviz.Digraph('G', filename='control-plane.gv', engine='sfdp', format='png',
                      node_attr={'color': 'lightblue2', 'style': 'filled'})
 
+g.edge('etcd', 'disk_performance')
 g.edge('kube-api', 'etcd')
 g.edge('openshift-api', 'etcd')
 g.edge('kube-apiserver-operator', 'kube-api')
