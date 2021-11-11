@@ -20,6 +20,7 @@ g.edge('openshift-controller-manager-operator', 'kube-api')
 g.edge('openshift-oauth-apiserver', 'openshift-api')
 g.edge('openshift-authentication', 'openshift-api')
 g.edge('openshift-authentication-operator', 'openshift-api')
+g.edge('openshift-operator-lifecycle-manager', 'kube-api')
 
 
 g.view()

@@ -15,4 +15,5 @@ digraph G {
 	"openshift-oauth-apiserver" -> "openshift-api"
 	"openshift-authentication" -> "openshift-api"
 	"openshift-authentication-operator" -> "openshift-api"
+	"openshift-operator-lifecycle-manager" -> "kube-api"
 }
